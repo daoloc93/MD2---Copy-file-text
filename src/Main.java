@@ -2,14 +2,14 @@ import java.io.*;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String from = "C:/User/Dell/Desktop";
         String to = "C:/User/Dell/Desktop/New folder (2)";
 
         File source = new File(from);
         File dest = new File(to);
 
-
+        copyFileUsingStream(source, dest);
     }
 
     private static void copyFileUsingStream(File source, File dest) throws IOException {
